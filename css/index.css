@@ -371,3 +371,9 @@ img {
   -moz-animation: spin 4s linear infinite;
   animation: spin 4s linear infinite;
 }
+canvas {
+  margin-top: 150px;
+  border: 1px solid black;
+  width: 560px;
+  height: 360px;
+}

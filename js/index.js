@@ -82,7 +82,7 @@ const el = document.querySelector('header img');
 el.onwheel = zoom;
 
 
-// dragStart event
+// animationStart event
 
 const boatPic = document.querySelector(".content-destination")
 
@@ -90,5 +90,42 @@ boatPic.addEventListener('animationstart', () => {
   alert('O god what did you do you my website!');
 });
 
+// click event to stop the spining
+
+boatPic.addEventListener('click', (event) => {
+    boatPic.style.animation = "none"
+
+})
+
+
+// When true, moving the mouse draws on the canvas
+
+
+var isDrawing = false;
+var x = 0;
+var y = 0;
+
+const myPics = document.getElementById('myPics');
+const context = myPics.getContext('2d');
+
+// The x and y offset of the canvas from the edge
+// of the page.
+const rect = myPics.getBoundingClientRect();
+
+// Add the event listeners for mousedown, mousemove, and mouseup
+myPics.addEventListener('mousedown', e => {
+
+  myPics.style.backgroundColor = "purple"
+
+});
+
+myPics.addEventListener('mousemove', e => {
+   myPics.style.backgroundColor = "blue"
+
+});
+
+myPics.addEventListener('mouseup', e => {
+  myPics.style.backgroundColor = "black"
+ });
 
 
