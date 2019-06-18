@@ -32,7 +32,7 @@ event.target.style.backgroundColor = 'white'
 }
 );
 
-//doubleclick the bus image
+//doubleclick the middle images
 
 
 const contentImg = Array.from(document.querySelectorAll(".img-content img"))
@@ -80,3 +80,15 @@ function zoom(event) {
 let scale = 1;
 const el = document.querySelector('header img');
 el.onwheel = zoom;
+
+
+// dragStart event
+
+const boatPic = document.querySelector(".content-destination")
+
+boatPic.addEventListener('animationstart', () => {
+  alert('O god what did you do you my website!');
+});
+
+
+
