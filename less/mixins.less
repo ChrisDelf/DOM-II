@@ -24,9 +24,17 @@
   @media @mobile {
     width: 100%;
   }
-  
+
   &:hover {
     background: @white;
     color: @button-bg;
   }
 }
+
+
+// spin animation
+
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
